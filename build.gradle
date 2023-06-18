@@ -213,6 +213,6 @@ publishing.publications {
 }
 // may not work
 jar {
-    baseName = 'xnat-workshop-stroke-plugin'
+    baseName = 'xnat-stroke-plugin'
     version = pluginVersion
 }
