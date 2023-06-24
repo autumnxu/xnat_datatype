@@ -55,7 +55,7 @@ public class XDATScreen_edit_workshop_HemorrhageBiomarkerTable extends EditSubje
 
             if (!context.containsKey("label")) {
                 final XnatSubjectdata               subject    = XnatSubjectdata.getXnatSubjectdatasById(subjectId, XDAT.getUserDetails(), false);
-                final List<XnatSubjectassessordata> biosamples = subject.getExperiments_experiment(WorkshopBiosamplecollection.SCHEMA_ELEMENT_NAME);
+                final List<XnatSubjectassessordata> biosamples = subject.getExperiments_experiment(hemorrhageBiomarkerTable.SCHEMA_ELEMENT_NAME);
                 final String subjectLabel = subject.getLabel();
                 int index = 1;
                 String label = null;
