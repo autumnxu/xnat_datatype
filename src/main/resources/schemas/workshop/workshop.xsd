@@ -10,8 +10,8 @@
 
 <xs:schema targetNamespace="http://nrg.wustl.edu/workshop" xmlns:workshop="http://nrg.wustl.edu/workshop" xmlns:xnat="http://nrg.wustl.edu/xnat" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<xs:import namespace="http://nrg.wustl.edu/xnat" schemaLocation="../xnat/xnat.xsd"/>
-	<xs:element name="BiosampleCollection" type="workshop:biosampleCollection"/>
-	<xs:complexType name="biosampleCollection">
+	<xs:element name="HemorrhageBiomarkerTable" type="workshop:hemorrhageBiomarkerTable"/>
+	<xs:complexType name="hemorrhageBiomarkerTable">
 		<xs:annotation>
 			<xs:documentation>Indicates whether the required stroke edema collections have been acquired per study protocol.</xs:documentation>
 		</xs:annotation>

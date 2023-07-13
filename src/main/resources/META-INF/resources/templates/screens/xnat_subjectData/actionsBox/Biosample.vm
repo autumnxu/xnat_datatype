@@ -3,5 +3,5 @@
 #* @vtlvariable name="om" type="org.nrg.xdat.om.XnatSubjectdata" *#
 <!-- Sequence: 6 -->
 <li class="yuimenuitem">
-    <A href="$link.setPage("XDATScreen_edit_workshop_biosampleCollection.vm").addQueryData("part_id", $!om.getId()).addQueryData("project", $project)"><div class="ic">&nbsp;</div><div class="ic_spacer">&nbsp;</div>Add StrokeEdemaSample</A>
+    <A href="$link.setPage("XDATScreen_edit_workshop_hemorrhageBiomarkerTable.vm").addQueryData("part_id", $!om.getId()).addQueryData("project", $project)"><div class="ic">&nbsp;</div><div class="ic_spacer">&nbsp;</div>Add StrokeEdemaSample</A>
 </li>
