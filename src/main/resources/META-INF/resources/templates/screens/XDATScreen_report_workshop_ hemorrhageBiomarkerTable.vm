@@ -132,7 +132,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("CT Scanner")
                     <td valign="top">
-                        #showString("workshop:biosampleCollection/ct_scanner" $item)
+                        #showString("workshop:hemorrhageBiomarkerTable/ct_scanner" $item)
                     </td>
                 </tr>
 
@@ -140,7 +140,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Scan Description")
                     <td valign="top">
-                        #showString("workshop:biosampleCollection/scan_description" $item)
+                        #showString("workshop:hemorrhageBiomarkerTable/scan_description" $item)
                     </td>
                 </tr>
 
@@ -148,7 +148,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Scan Selected") <!-- changed DNA to X Dimension -->
                     <td valign="top"> <!-- changed dna to x_dimension-->
-                        #showInteger("workshop:biosampleCollection/scan_selected" $item)
+                        #showInteger("workshop:hemorrhageBiomarkerTable/scan_selected" $item)
                     </td>
                 </tr>
 
@@ -172,7 +172,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("X Dimension") <!-- changed DNA to X Dimension -->
                     <td valign="top"> <!-- changed dna to x_dimension-->
-                        #showInteger("workshop:biosampleCollection/x_dimension" $item)
+                        #showInteger("workshop:hemorrhageBiomarkerTable/x_dimension" $item)
                     </td>
                 </tr>
 
@@ -180,7 +180,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Y Dimension")
                     <td valign="top">
-                        #showInteger("workshop:biosampleCollection/y_dimension" $item)
+                        #showInteger("workshop:hemorrhageBiomarkerTable/y_dimension" $item)
                     </td>
                 </tr>
 
@@ -196,7 +196,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Scan Quality")
                     <td valign="top">
-                        #showString("workshop:biosampleCollection/Scan_Quality" $item)
+                        #showString("workshop:hemorrhageBiomarkerTable/Scan_Quality" $item)
                     </td>
                 </tr>
 
@@ -243,7 +243,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Infraction Side")
                     <td valign="top">
-                        #showString("workshop:biosampleCollection/Infarct_Side" $item)
+                        #showString("workshop:hemorrhageBiomarkerTable/Infarct_Side" $item)
                     </td>
                 </tr>
 
@@ -267,7 +267,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Stroke Cerebral") <!-- changed CSF to Stroke Cerebral -->
                     <td valign="top"> <!-- changed csf to Stroke Cerebral -->
-                        #showString("workshop:biosampleCollection/Cerebral_Edema_Grade" $item)
+                        #showString("workshop:hemorrhageBiomarkerTable/Cerebral_Edema_Grade" $item)
                     </td>
                 </tr>
                 

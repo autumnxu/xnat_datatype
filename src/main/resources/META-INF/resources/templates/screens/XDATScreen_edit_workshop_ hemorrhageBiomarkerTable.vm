@@ -25,13 +25,13 @@ window.currentLabel="$!om.getLabel()";
 <form ID="biosampleAssessmentForm" name="biosampleAssessmentForm" method="post" action="$link.setAction("ModifySubjectAssessorData")">
     <input type="hidden" name="project" value="$!{project}">
     <input type="hidden" name="part_id" value="$!{subjectId}">
-    <input type='hidden' name='workshop:biosampleCollection/ID' value='$!item.getProperty("ID")'/>
-    <input type="hidden" name="workshop:biosampleCollection/project" value='$!{project}'/>
-    <input type='hidden' name='workshop:biosampleCollection/subject_ID' value='$!{subjectId}'/>
-    <input type='hidden' name='workshop:biosampleCollection/label' value='$!label'/>
-    <input type="hidden" name="workshop:biosampleCollection.date.month" id="workshop:biosampleCollection.date.month" value=""/>
-    <input type="hidden" name="workshop:biosampleCollection.date.date" id="workshop:biosampleCollection.date.date" value=""/>
-    <input type="hidden" name="workshop:biosampleCollection.date.year" id="workshop:biosampleCollection.date.year" value=""/>
+    <input type='hidden' name='workshop:hemorrhageBiomarkerTable/ID' value='$!item.getProperty("ID")'/>
+    <input type="hidden" name="workshop:hemorrhageBiomarkerTable/project" value='$!{project}'/>
+    <input type='hidden' name='workshop:hemorrhageBiomarkerTable/subject_ID' value='$!{subjectId}'/>
+    <input type='hidden' name='workshop:hemorrhageBiomarkerTable/label' value='$!label'/>
+    <input type="hidden" name="workshop:hemorrhageBiomarkerTable.date.month" id="workshop:hemorrhageBiomarkerTable.date.month" value=""/>
+    <input type="hidden" name="workshop:hemorrhageBiomarkerTable.date.date" id="workshop:hemorrhageBiomarkerTable.date.date" value=""/>
+    <input type="hidden" name="workshop:hemorrhageBiomarkerTable.date.year" id="workshop:hemorrhageBiomarkerTable.date.year" value=""/>
     <input type="hidden" name="$om.getXSIType()/ID" id="$om.getXSIType()/ID" value="$!om.getId()"/>
 
     #if($vr)
@@ -67,35 +67,35 @@ window.currentLabel="$!om.getLabel()";
                          <tr>
                              #formLabel("Scan Date")
                              <td>
-                                #xdatDateBox("workshop:biosampleCollection/Scan_Date" $item $vr)
+                                #xdatDateBox("workshop:hemorrhageBiomarkerTable/Scan_Date" $item $vr)
                              </td>
                          </tr>
 
                          <tr>
                              #formLabel("Scan Time") <!-- changed RNA to Scan Time -->
                              <td>
-                                 #xdatStringBox("workshop:biosampleCollection/scan_time" $item $vr) <!-- changed rna to scan_time -->
+                                 #xdatStringBox("workshop:hemorrhageBiomarkerTable/scan_time" $item $vr) <!-- changed rna to scan_time -->
                              </td>
                          </tr>
 
                         <tr>
                              #formLabel("Stroke Date")
                              <td>
-                                #xdatDateBox("workshop:biosampleCollection/Stroke_Date" $item $vr)
+                                #xdatDateBox("workshop:hemorrhageBiomarkerTable/Stroke_Date" $item $vr)
                              </td>
                          </tr>
 
                          <tr>
                              #formLabel("Stroke Time")  
                              <td>
-                                 #xdatStringBox("workshop:biosampleCollection/stroke_time" $item $vr) <!-- changed rna to scan_time -->
+                                 #xdatStringBox("workshop:hemorrhageBiomarkerTable/stroke_time" $item $vr) <!-- changed rna to scan_time -->
                              </td>
                          </tr>
 
                          <tr>
                              #formLabel("Elapsed From Stroke")
                              <td>
-                                  #xdatStringBox("workshop:biosampleCollection/elapsed_from_stroke" $item $vr)
+                                  #xdatStringBox("workshop:hemorrhageBiomarkerTable/elapsed_from_stroke" $item $vr)
                              </td>
                          </tr>
                         
@@ -103,56 +103,56 @@ window.currentLabel="$!om.getLabel()";
                         <tr>
                              #formLabel("CT Scanner")
                              <td>
-                                 #xdatStringBox("workshop:biosampleCollection/ct_scanner" $item $vr)
+                                 #xdatStringBox("workshop:hemorrhageBiomarkerTable/ct_scanner" $item $vr)
                              </td>
                          </tr>
 
                          <tr>
                              #formLabel("Scan Description")
                              <td>
-                                 #xdatStringBox("workshop:biosampleCollection/scan_description" $item $vr)
+                                 #xdatStringBox("workshop:hemorrhageBiomarkerTable/scan_description" $item $vr)
                              </td>
                          </tr>
 
                          <tr>
                              #formLabel("Scan Selected")  
                              <td>  
-                                 #xdatStringBox("workshop:biosampleCollection/scan_selected" $item $vr)
+                                 #xdatStringBox("workshop:hemorrhageBiomarkerTable/scan_selected" $item $vr)
                              </td>
                          </tr>
 
                          <tr>
                              #formLabel("DICOM Pixel Size X")
                              <td>
-                                  #xdatStringBox("workshop:biosampleCollection/dicom_pixel_size_x" $item $vr)
+                                  #xdatStringBox("workshop:hemorrhageBiomarkerTable/dicom_pixel_size_x" $item $vr)
                              </td>
                          </tr>
 
                          <tr>
                              #formLabel("DICOM Pixel Size Y")
                              <td>
-                                  #xdatStringBox("workshop:biosampleCollection/dicom_pixel_size_y" $item $vr)
+                                  #xdatStringBox("workshop:hemorrhageBiomarkerTable/dicom_pixel_size_y" $item $vr)
                              </td>
                          </tr>
 
                         <tr>
                              #formLabel("X Dimension") <!-- changed DNA to X Dimension -->
                              <td> <!-- changed dna to x_dimension -->
-                                 #xdatStringBox("workshop:biosampleCollection/x_dimension" $item $vr)
+                                 #xdatStringBox("workshop:hemorrhageBiomarkerTable/x_dimension" $item $vr)
                              </td>
                          </tr>
 
                          <tr>
                              #formLabel("Y Dimension")
                              <td>
-                                 #xdatStringBox("workshop:biosampleCollection/y_dimension" $item $vr)
+                                 #xdatStringBox("workshop:hemorrhageBiomarkerTable/y_dimension" $item $vr)
                              </td>
                          </tr>
 
                          <tr>
                              #formLabel("Z Dimension")
                              <td>
-                                  #xdatStringBox("workshop:biosampleCollection/z_dimension" $item $vr)
+                                  #xdatStringBox("workshop:hemorrhageBiomarkerTable/z_dimension" $item $vr)
                              </td>
                          </tr>
 
@@ -160,63 +160,63 @@ window.currentLabel="$!om.getLabel()";
                          <tr>
                              #formLabel("Scan Quality")
                              <td>
-                                 #xdatStringBox("workshop:biosampleCollection/scan_quality" $item $vr)
+                                 #xdatStringBox("workshop:hemorrhageBiomarkerTable/scan_quality" $item $vr)
                              </td>
                          </tr>
 
                          <tr>
                              #formLabel("Total CSF Volume")
                              <td>
-                                  #xdatStringBox("workshop:biosampleCollection/total_cerebrospinal_fluid_volume" $item $vr)
+                                  #xdatStringBox("workshop:hemorrhageBiomarkerTable/total_cerebrospinal_fluid_volume" $item $vr)
                              </td>
                          </tr>
 
                         <tr>
                              #formLabel("CSF Ratio")
                              <td>
-                                  #xdatStringBox("workshop:biosampleCollection/cerebrospinal_fluid_ratio" $item $vr)
+                                  #xdatStringBox("workshop:hemorrhageBiomarkerTable/cerebrospinal_fluid_ratio" $item $vr)
                              </td>
                          </tr>
 
                          <tr>
                              #formLabel("Net Water Uptake")
                              <td>
-                                  #xdatStringBox("workshop:biosampleCollection/net_water_uptake" $item $vr)
+                                  #xdatStringBox("workshop:hemorrhageBiomarkerTable/net_water_uptake" $item $vr)
                              </td>
                          </tr>
 
                          <tr>
                              #formLabel("Infarct Volumn") <!-- changed Plasama to Infarct Volumn -->
                              <td>
-                                  #xdatStringBox("workshop:biosampleCollection/infarct_volumn" $item $vr) <!-- changed Plasma to infarct_volumn -->
+                                  #xdatStringBox("workshop:hemorrhageBiomarkerTable/infarct_volumn" $item $vr) <!-- changed Plasma to infarct_volumn -->
                              </td>
                          </tr>
 
                         <tr>
                              #formLabel("Infarct Side")
                              <td>
-                                 #xdatStringBox("workshop:biosampleCollection/infarct_side" $item $vr)
+                                 #xdatStringBox("workshop:hemorrhageBiomarkerTable/infarct_side" $item $vr)
                              </td>
                          </tr>
 
                         <tr>
                              #formLabel("Date of Analysis")
                              <td>
-                                #xdatDateBox("workshop:biosampleCollection/analysis_date" $item $vr)
+                                #xdatDateBox("workshop:hemorrhageBiomarkerTable/analysis_date" $item $vr)
                              </td>
                          </tr>
 
                          <tr>
                              #formLabel("Version Date") <!-- changed Serum to Version Date -->
                              <td>  <!-- changed Serum to Version version_date -->
-                                #xdatDateBox("workshop:biosampleCollection/version_date" $item $vr)
+                                #xdatDateBox("workshop:hemorrhageBiomarkerTable/version_date" $item $vr)
                              </td>
                          </tr>
 
                          <tr>
                              #formLabel("Cerebral Edema Grade") <!-- changed CSF to Cerebral Edema Grade -->
                              <td> <!-- changed csf to Cerebral Edema Grade -->
-                                 #xdatStringBox("workshop:biosampleCollection/cerebral_edema_grade" $item $vr)
+                                 #xdatStringBox("workshop:hemorrhageBiomarkerTable/cerebral_edema_grade" $item $vr)
                              </td>
                          </tr>
 
@@ -244,9 +244,9 @@ window.currentLabel="$!om.getLabel()";
 <script type="text/javascript">
     function validateForm() {
         var today = new Date();
-        document.getElementById('workshop:biosampleCollection.date.month').value = today.getMonth();
-        document.getElementById('workshop:biosampleCollection.date.date').value = today.getDate();
-        document.getElementById('workshop:biosampleCollection.date.year').value = today.getFullYear();
+        document.getElementById('workshop:hemorrhageBiomarkerTable.date.month').value = today.getMonth();
+        document.getElementById('workshop:hemorrhageBiomarkerTable.date.date').value = today.getDate();
+        document.getElementById('workshop:hemorrhageBiomarkerTable.date.year').value = today.getFullYear();
 
         document.biosampleAssessmentForm.submit();
         return true;
