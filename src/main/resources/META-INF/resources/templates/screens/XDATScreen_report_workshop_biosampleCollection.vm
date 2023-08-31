@@ -86,7 +86,9 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Scan Date")
                     <td valign="top">
-                         $turbineUtils.formatDate($!item.getProperty("Scan_Date"),"yyyy-MM-dd")
+                        #if($item.getProperty("Scan_Date"))
+                            $turbineUtils.formatDate($item.getProperty("Scan_Date"), "yyyy-MM-dd")
+                        #end
                     </td>
                 </tr>
 
@@ -102,7 +104,9 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Stroke Date")
                     <td valign="top">
-                         $turbineUtils.formatDate($!item.getProperty("Stroke_Date"),"yyyy-MM-dd")
+                        #if($item.getProperty("Stroke_Date"))
+                            $turbineUtils.formatDate($item.getProperty("Stroke_Date"), "yyyy-MM-dd")
+                        #end
                     </td>
                 </tr>
 
@@ -131,24 +135,24 @@ $page.setVlinkColor($ui.vlink)
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("CT Scanner")
-                    <td valign="top">
-                        #showString("workshop:biosampleCollection/ct_scanner" $item)
+                    <td valign="top"> <!-- #showString("workshop:biosampleCollection/ct_scanner" $item) -->
+                        $!item.getProperty("CT_Scanner")
                     </td>
                 </tr>
 
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Scan Description")
-                    <td valign="top">
-                        #showString("workshop:biosampleCollection/scan_description" $item)
+                    <td valign="top"> <!--  #showString("workshop:biosampleCollection/scan_description" $item) -->
+                       $!item.getProperty("Scan_Description")
                     </td>
                 </tr>
 
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("Scan Selected") <!-- changed DNA to X Dimension -->
-                    <td valign="top"> <!-- changed dna to x_dimension-->
-                        #showInteger("workshop:biosampleCollection/scan_selected" $item)
+                    #formLabel("Scan Selected")
+                    <td valign="top"> <!-- #showInteger("workshop:biosampleCollection/scan_selected" $item) -->
+                        $!item.getProperty("Scan_Selected")
                     </td>
                 </tr>
 
@@ -170,17 +174,17 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("X Dimension") <!-- changed DNA to X Dimension -->
-                    <td valign="top"> <!-- changed dna to x_dimension-->
-                        #showInteger("workshop:biosampleCollection/x_dimension" $item)
+                    #formLabel("X Dimension") 
+                    <td valign="top"> <!-- #showInteger("workshop:biosampleCollection/x_dimension" $item) -->
+                        $!item.getProperty("X_Dimension")
                     </td>
                 </tr>
 
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Y Dimension")
-                    <td valign="top">
-                        #showInteger("workshop:biosampleCollection/y_dimension" $item)
+                    <td valign="top"> <!-- #showInteger("workshop:biosampleCollection/y_dimension" $item) -->
+                        $!item.getProperty("Y_Dimension")
                     </td>
                 </tr>
 
@@ -195,8 +199,8 @@ $page.setVlinkColor($ui.vlink)
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Scan Quality")
-                    <td valign="top">
-                        #showString("workshop:biosampleCollection/Scan_Quality" $item)
+                    <td valign="top"> <!--  #showString("workshop:biosampleCollection/Scan_Quality" $item) -->
+                       $!item.getProperty("Scan_Quality")
                     </td>
                 </tr>
 
@@ -242,8 +246,8 @@ $page.setVlinkColor($ui.vlink)
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Infraction Side")
-                    <td valign="top">
-                        #showString("workshop:biosampleCollection/Infarct_Side" $item)
+                    <td valign="top"> <!-- #showString("workshop:biosampleCollection/Infarct_Side" $item) -->
+                        $!item.getProperty("Infarct_Side")
                     </td>
                 </tr>
 
