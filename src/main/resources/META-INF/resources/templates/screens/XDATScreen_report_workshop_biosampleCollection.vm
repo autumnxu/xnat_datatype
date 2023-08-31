@@ -271,7 +271,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Stroke Cerebral")
                     <td valign="top">  <!-- #showString("workshop:biosampleCollection/Cerebral_Edema_Grade" $item) -->
-                        $!item.getProperty("Infarct_Volumn")
+                        $!item.getProperty("Cerebral_Edema_Grade")
                     </td>
                 </tr>
                 
