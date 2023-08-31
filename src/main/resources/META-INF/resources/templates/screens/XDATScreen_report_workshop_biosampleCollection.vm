@@ -135,7 +135,7 @@ $page.setVlinkColor($ui.vlink)
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("CT Scanner")
-                    <td valign="top"> <!-- #showString("workshop:biosampleCollection/ct_scanner" $item) -->
+                    <td valign="top">
                         $!item.getProperty("CT_Scanner")
                     </td>
                 </tr>
@@ -143,7 +143,7 @@ $page.setVlinkColor($ui.vlink)
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Scan Description")
-                    <td valign="top"> <!--  #showString("workshop:biosampleCollection/scan_description" $item) -->
+                    <td valign="top">
                        $!item.getProperty("Scan_Description")
                     </td>
                 </tr>
@@ -151,7 +151,7 @@ $page.setVlinkColor($ui.vlink)
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Scan Selected")
-                    <td valign="top"> <!-- #showInteger("workshop:biosampleCollection/scan_selected" $item) -->
+                    <td valign="top">
                         $!item.getProperty("Scan_Selected")
                     </td>
                 </tr>
@@ -175,7 +175,7 @@ $page.setVlinkColor($ui.vlink)
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("X Dimension") 
-                    <td valign="top"> <!-- #showInteger("workshop:biosampleCollection/x_dimension" $item) -->
+                    <td valign="top">
                         $!item.getProperty("X_Dimension")
                     </td>
                 </tr>
@@ -183,7 +183,7 @@ $page.setVlinkColor($ui.vlink)
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Y Dimension")
-                    <td valign="top"> <!-- #showInteger("workshop:biosampleCollection/y_dimension" $item) -->
+                    <td valign="top">
                         $!item.getProperty("Y_Dimension")
                     </td>
                 </tr>
@@ -246,7 +246,7 @@ $page.setVlinkColor($ui.vlink)
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Infraction Side")
-                    <td valign="top"> <!-- #showString("workshop:biosampleCollection/Infarct_Side" $item) -->
+                    <td valign="top">
                         $!item.getProperty("Infarct_Side")
                     </td>
                 </tr>
@@ -254,7 +254,7 @@ $page.setVlinkColor($ui.vlink)
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Version Date")
-                    <td valign="top"> <!--  && $item.getProperty("Version_Date").matches("\d{4}-\d{2}-\d{2}"))-->
+                    <td valign="top">
                         #if($item.getProperty("Version_Date"))
                             $turbineUtils.formatDate($item.getProperty("Version_Date"), "yyyy-MM-dd")
                         #end
@@ -274,7 +274,7 @@ $page.setVlinkColor($ui.vlink)
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Stroke Cerebral")
-                    <td valign="top">  <!-- #showString("workshop:biosampleCollection/Cerebral_Edema_Grade" $item) -->
+                    <td valign="top"> 
                         $!item.getProperty("Cerebral_Edema_Grade")
                     </td>
                 </tr>
