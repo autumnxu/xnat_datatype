@@ -251,7 +251,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Version Date")
                     <td valign="top"> <!--  && $item.getProperty("Version_Date").matches("\d{4}-\d{2}-\d{2}"))-->
-                        #if($item.getProperty("Version_Date")
+                        #if($item.getProperty("Version_Date"))
                             $turbineUtils.formatDate($item.getProperty("Version_Date"), "yyyy-MM-dd")
                         #end
                     </td>
@@ -269,9 +269,9 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("Stroke Cerebral") <!-- changed CSF to Stroke Cerebral -->
-                    <td valign="top"> <!-- changed csf to Stroke Cerebral -->
-                        #showString("workshop:biosampleCollection/Cerebral_Edema_Grade" $item)
+                    #formLabel("Stroke Cerebral")
+                    <td valign="top">  <!-- #showString("workshop:biosampleCollection/Cerebral_Edema_Grade" $item) -->
+                        $!item.getProperty("Infarct_Volumn")
                     </td>
                 </tr>
                 
