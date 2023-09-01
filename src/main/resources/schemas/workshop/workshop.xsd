@@ -91,7 +91,7 @@
 						</xs:simpleType>
 					</xs:element>
 
-					<xs:element name="DICOM_pixel_size_x" minOccurs="0">
+					<xs:element name="DICOM_Pixel_Size_X" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>for complete image size: x axis pixel size of DICOM</xs:documentation>
 						</xs:annotation>
@@ -100,7 +100,7 @@
 						</xs:simpleType>
 					</xs:element>
 					
-					<xs:element name="DICOM_pixel_size_y" minOccurs="0">
+					<xs:element name="DICOM_Pixel_Size_Y" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>for complete image size: y axis pixel size of DICOM</xs:documentation>
 						</xs:annotation>
@@ -172,7 +172,7 @@
 						</xs:simpleType>
 					</xs:element>
 
-					<xs:element name="Infarct_Volumn" minOccurs="0"> <!-- changed plasma to Infarct_Volumn-->
+					<xs:element name="Infarct_Volume" minOccurs="0"> 
 						<xs:annotation>
 							<xs:documentation>infarction volumn, likely numeric</xs:documentation>
 						</xs:annotation>
@@ -199,7 +199,7 @@
 						</xs:simpleType>
 					</xs:element>
 
-					<xs:element name="Version_Date" minOccurs="0"> <!-- changed Serum to Version_Date -->
+					<xs:element name="Version_Date" minOccurs="0"> 
 						<xs:annotation>
 							<xs:documentation>date of most recent processing that generated csv file</xs:documentation>
 						</xs:annotation>
@@ -208,7 +208,7 @@
 						</xs:simpleType>
 					</xs:element>
 
-					<xs:element name="Cerebral_Edema_Grade" minOccurs="0">  <!-- changed csf to Cerebral_Edema_Grade -->
+					<xs:element name="Cerebral_Edema_Grade" minOccurs="0"> 
 						<xs:annotation>
 							<xs:documentation>blank in dev, integer values or blank in production</xs:documentation>
 						</xs:annotation>

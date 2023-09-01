@@ -237,9 +237,9 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("Infarction Volumn") 
+                    #formLabel("Infarction Volume") 
                     <td valign="top">
-                        $!item.getProperty("Infarct_Volumn")  
+                        $!item.getProperty("Infarct_Volume")  
                     </td>
                 </tr>               
 
@@ -253,20 +253,20 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("Version Date")
+                    #formLabel("Date of Analysis")
                     <td valign="top">
-                        #if($item.getProperty("Version_Date"))
-                            $turbineUtils.formatDate($item.getProperty("Version_Date"), "yyyy-MM-dd")
+                        #if($item.getProperty("Analysis_Date"))
+                            $turbineUtils.formatDate($item.getProperty("Analysis_Date"), "yyyy-MM-dd")
                         #end
                     </td>
                 </tr>
 
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("Date of Analysis")
+                    #formLabel("Version Date")
                     <td valign="top">
-                        #if($item.getProperty("Analysis_Date"))
-                            $turbineUtils.formatDate($item.getProperty("Analysis_Date"), "yyyy-MM-dd")
+                        #if($item.getProperty("Version_Date"))
+                            $turbineUtils.formatDate($item.getProperty("Version_Date"), "yyyy-MM-dd")
                         #end
                     </td>
                 </tr>
