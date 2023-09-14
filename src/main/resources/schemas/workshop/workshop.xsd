@@ -19,7 +19,7 @@
 			<xs:extension base="xnat:subjectAssessorData">
 				<xs:sequence>
 
-					<xs:element name="Scan_Date" minOccurs="0">
+					<xs:element name="Scan_Date" minOccurs="0" default = "">
 						<xs:annotation>
 							<xs:documentation>scan date</xs:documentation>
 						</xs:annotation>
@@ -28,7 +28,7 @@
 						</xs:simpleType>
 					</xs:element>
 
-					<xs:element name="Scan_Time" minOccurs="0"> <!--changed rna to Scan_Time -->
+					<xs:element name="Scan_Time" minOccurs="0" default = ""> <!--changed rna to Scan_Time -->
 						<xs:annotation>
 							<xs:documentation>not sure of unit</xs:documentation>
 						</xs:annotation>
@@ -82,7 +82,7 @@
 						</xs:simpleType>
 					</xs:element>
 
-                    <xs:element name="Scan_Selected"> <!-- changed dna to X_Dimension -->
+                    <xs:element name="Scan_Selected" minOccurs="0"> <!-- changed dna to X_Dimension -->
 						<xs:annotation>
 							<xs:documentation>which axial brain used for analysis</xs:documentation>
 						</xs:annotation>
@@ -91,7 +91,7 @@
 						</xs:simpleType>
 					</xs:element>
 
-					<xs:element name="DICOM_Pixel_Size_X" minOccurs="0">
+					<xs:element name="DICOM_Pixel_Size_X" minOccurs="0" default = "">
 						<xs:annotation>
 							<xs:documentation>for complete image size: x axis pixel size of DICOM</xs:documentation>
 						</xs:annotation>
@@ -100,7 +100,7 @@
 						</xs:simpleType>
 					</xs:element>
 					
-					<xs:element name="DICOM_Pixel_Size_Y" minOccurs="0">
+					<xs:element name="DICOM_Pixel_Size_Y" minOccurs="0" default = "">
 						<xs:annotation>
 							<xs:documentation>for complete image size: y axis pixel size of DICOM</xs:documentation>
 						</xs:annotation>
@@ -109,7 +109,7 @@
 						</xs:simpleType>
 					</xs:element>
 
-					<xs:element name="X_Dimension"> <!-- changed dna to X_Dimension -->
+					<xs:element name="X_Dimension" minOccurs="0"> <!-- changed dna to X_Dimension -->
 						<xs:annotation>
 							<xs:documentation>for resolution: x axis dimension</xs:documentation>
 						</xs:annotation>
@@ -118,7 +118,7 @@
 						</xs:simpleType>
 					</xs:element>
 
-					<xs:element name="Y_Dimension">
+					<xs:element name="Y_Dimension" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>for resolution: x axis dimension</xs:documentation>
 						</xs:annotation>
@@ -145,7 +145,7 @@
 						</xs:simpleType>
 					</xs:element>
 
-					<xs:element name="Total_Cerebrospinal_Fluid_Volume" minOccurs="0">
+					<xs:element name="Total_Cerebrospinal_Fluid_Volume" minOccurs="0" default="">
 						<xs:annotation>
 							<xs:documentation>total cerebrospinal fluid volume</xs:documentation>
 						</xs:annotation>
@@ -154,7 +154,7 @@
 						</xs:simpleType>
 					</xs:element>
 
-					<xs:element name="Cerebrospinal_Fluid_Ratio" minOccurs="0">
+					<xs:element name="Cerebrospinal_Fluid_Ratio" minOccurs="0" default="">
 						<xs:annotation>
 							<xs:documentation>cerebrospinal fluid ratio</xs:documentation>
 						</xs:annotation>
@@ -163,7 +163,7 @@
 						</xs:simpleType>
 					</xs:element>
 
-					<xs:element name="Net_Water_Uptake" minOccurs="0">
+					<xs:element name="Net_Water_Uptake" minOccurs="0" default="">
 						<xs:annotation>
 							<xs:documentation>net water uptake</xs:documentation>
 						</xs:annotation>
