@@ -64,6 +64,15 @@
 						</xs:simpleType>
 					</xs:element>
 
+					<xs:element name="Session_Number" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>session ID in the form of SNIPR_Exxxx</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:string"/>
+						</xs:simpleType>
+					</xs:element>
+
                     <xs:element name="CT_Scanner" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>CT Scanner type, take note of the portable version</xs:documentation>
@@ -87,7 +96,7 @@
 							<xs:documentation>which axial brain used for analysis</xs:documentation>
 						</xs:annotation>
 						<xs:simpleType>
-							<xs:restriction base="xs:integer"/>
+							<xs:restriction base="xs:string"/>
 						</xs:simpleType>
 					</xs:element>
 
@@ -155,16 +164,12 @@
 					</xs:element>
 
 					<xs:element name="Cerebrospinal_Fluid_Ratio" minOccurs="0">
-  						<xs:annotation>
-    						<xs:documentation>cerebrospinal fluid ratio</xs:documentation>
-  						</xs:annotation>
-  						<xs:complexType>
-   							<xs:simpleContent>
-      							<xs:extension base="xs:double">
-       							 	<xs:attribute name="isNA" type="xs:boolean" default="false"/>
-      							</xs:extension>
-    						</xs:simpleContent>
-  						</xs:complexType>
+						<xs:annotation>
+							<xs:documentation>cerebrospinal fluid ratio</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:double"/>
+						</xs:simpleType>
 					</xs:element>
 
 					<xs:element name="Net_Water_Uptake" minOccurs="0">

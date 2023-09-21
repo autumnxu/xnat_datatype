@@ -127,6 +127,14 @@ $page.setVlinkColor($ui.vlink)
                 </tr>
 
                 <tr>
+                    <td>&nbsp;</td>
+                    #formLabel("Session Number")
+                    <td valign="top">
+                        $!item.getProperty("Session_Number")
+                    </td>
+                </tr>
+
+                <tr>
                     <td colspan="2" style="padding-top: 20px; padding-bottom: 10px; text-align: left; vertical-align: middle;">
                         <span style="font-family: $ui.sansSerifFonts; font-size: small; "><i>Scan Details</i></span>
                     </td>

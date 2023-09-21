@@ -98,6 +98,13 @@ window.currentLabel="$!om.getLabel()";
                                   #xdatStringBox("workshop:biosampleCollection/elapsed_from_stroke" $item $vr)
                              </td>
                          </tr>
+
+                         <tr>
+                             #formLabel("Session Number")
+                             <td>
+                                  #xdatStringBox("workshop:biosampleCollection/session_number" $item $vr)
+                             </td>
+                         </tr>
                         
                         
                         <tr>
