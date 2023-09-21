@@ -155,12 +155,16 @@
 					</xs:element>
 
 					<xs:element name="Cerebrospinal_Fluid_Ratio" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>cerebrospinal fluid ratio</xs:documentation>
-						</xs:annotation>
-						<xs:simpleType>
-							<xs:restriction base="xs:double"/>
-						</xs:simpleType>
+  						<xs:annotation>
+    						<xs:documentation>cerebrospinal fluid ratio</xs:documentation>
+  						</xs:annotation>
+  						<xs:complexType>
+   							<xs:simpleContent>
+      							<xs:extension base="xs:double">
+       							 	<xs:attribute name="isNA" type="xs:boolean" default="false"/>
+      							</xs:extension>
+    						</xs:simpleContent>
+  						</xs:complexType>
 					</xs:element>
 
 					<xs:element name="Net_Water_Uptake" minOccurs="0">
