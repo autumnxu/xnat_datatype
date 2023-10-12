@@ -102,7 +102,7 @@ window.currentLabel="$!om.getLabel()";
                          <tr>
                              #formLabel("Session Name")
                              <td>
-                                  #xdatStringBox("workshop:biosampleCollection/session_number" $item $vr)
+                                  #xdatStringBox("workshop:biosampleCollection/session_name" $item $vr)
                              </td>
                          </tr>
                         
