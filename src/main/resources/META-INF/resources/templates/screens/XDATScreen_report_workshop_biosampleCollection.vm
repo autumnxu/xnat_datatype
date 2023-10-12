@@ -128,9 +128,9 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("Session Number")
+                    #formLabel("Session Name")
                     <td valign="top">
-                        $!item.getProperty("Session_Number")
+                        $!item.getProperty("Session_Name")
                     </td>
                 </tr>
 

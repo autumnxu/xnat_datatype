@@ -64,9 +64,9 @@
 						</xs:simpleType>
 					</xs:element>
 
-					<xs:element name="Session_Number" minOccurs="0">
+					<xs:element name="Session_Name" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>session ID in the form of SNIPR_Exxxx</xs:documentation>
+							<xs:documentation>session name (string string string _ val val val) in the form of SNIPR_Exxxx</xs:documentation>
 						</xs:annotation>
 						<xs:simpleType>
 							<xs:restriction base="xs:string"/>
