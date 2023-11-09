@@ -8,4 +8,4 @@
  */
 
 //rootProject.name anything else doesn't work
-rootProject.name = 'xnat-workshop'
+rootProject.name = 'xnat-stroke'
